@@ -11,7 +11,6 @@ function App() {
     <>
       <div>
         <h2>Account</h2>
-
         <div>
           status: {account.status}
           <br />
@@ -19,14 +18,12 @@ function App() {
           <br />
           chainId: {account.chainId}
         </div>
-
         {account.status === 'connected' && (
           <button type="button" onClick={() => disconnect()}>
             Disconnect
           </button>
         )}
       </div>
-
       <div>
         <h2>Connect</h2>
         {connectors.map((connector) => (
