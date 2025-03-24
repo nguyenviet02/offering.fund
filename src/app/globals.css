@@ -1,26 +1,115 @@
 @import 'tailwindcss';
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
+  --background-primary: #0a0d14;
+  --background-secondary: #11141c;
+  --background-cool: #282b34;
+  --background-brand-light: #0e2063;
+  --background-brand-main: #375ee6;
+  --background-brand-dark: #263fc7;
+  --background-error-light: #650905;
+  --background-error-main: #fd433d;
+  --background-error-dark: #cf3631;
+  --background-disabled: #282b34;
+  --background-accent: #eeeff3;
+  --background-accent-secondary: #d7d9e1;
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
+  --border-primary: #191c24;
+  --border-brand: #375ee6;
+  --border-success: #23c586;
+  --border-warning: #fd7125;
+  --border-error: #fc524d;
 
-@media (prefers-color-scheme: dark) {
+  --text-primary: #eeeff3;
+  --text-secondary: #9598ab;
+  --text-placeholder: #626679;
+  --text-disabled: #404352;
+  --text-warning: #fd7125;
+  --text-error: #fc524d;
+  --text-info: #b7b9c7;
+  --text-success: #19b076;
+  --text-brand-light: #6f96fa;
+  --text-brand-main: #375ee6;
+  --text-brand-dark: #263fc7;
+  --text-on-brand: #ffffff;
+  --text-on-brand-secondary: #404352;
+  --text-purple: #8b3deb;
+}
+@media (prefers-color-scheme: light) {
   :root {
     --background: #0a0a0a;
     --foreground: #ededed;
   }
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+@theme inline {
+  --color-background-primary: var(--background-primary);
+  --color-background-secondary: var(--background-secondary);
+  --color-background-cool: var(--background-cool);
+  --color-background-brand-light: var(--background-brand-light);
+  --color-background-brand-main: var(--background-brand-main);
+  --color-background-brand-dark: var(--background-brand-dark);
+  --color-background-error-light: var(--background-error-light);
+  --color-background-error-main: var(--background-error-main);
+  --color-background-error-dark: var(--background-error-dark);
+  --color-background-disabled: var(--background-disabled);
+  --color-background-accent: var(--background-accent);
+  --color-background-accent-secondary: var(--background-accent-secondary);
+
+  --color-border-primary: var(--border-primary);
+  --color-border-brand: var(--border-brand);
+  --color-border-success: var(--border-success);
+  --color-border-warning: var(--border-warning);
+  --color-border-error: var(--border-error);
+
+  --color-text-primary: var(--text-primary);
+  --color-text-secondary: var(--text-secondary);
+  --color-text-placeholder: var(--text-placeholder);
+  --color-text-disabled: var(--text-disabled);
+  --color-text-warning: var(--text-warning);
+  --color-text-error: var(--text-error);
+  --color-text-info: var(--text-info);
+  --color-text-success: var(--text-success);
+  --color-text-brand-light: var(--text-brand-light);
+  --color-text-brand-main: var(--text-brand-main);
+  --color-text-brand-dark: var(--text-brand-dark);
+  --color-text-on-brand: var(--text-on-brand);
+  --color-text-on-brand-secondary: var(--text-on-brand-secondary);
+  --color-text-purple: var(--text-purple);
+}
+
+@theme {
+  /* Customize Text */
+  --text-header-xxl: 4.5rem;
+  --text-header-xxl--line-height: 5.625rem;
+
+  --text-header-xl: 3.75rem;
+  --text-header-xl--line-height: 4.5rem;
+
+  --text-header-lg: 3rem;
+  --text-header-lg--line-height: 3.75rem;
+
+  --text-header-md: 2.25rem;
+  --text-header-md--line-height: 3rem;
+
+  --text-header-sm: 1.875rem;
+  --text-header-sm--line-height: 2.375rem;
+
+  --text-body-xxl: 1.5rem;
+  --text-body-xxl--line-height: 2rem;
+
+  --text-body-xl: 1.25rem;
+  --text-body-xl--line-height: 1.875rem;
+
+  --text-body-lg: 1.125rem;
+  --text-body-lg--line-height: 1.75rem;
+
+  --text-body-md: 1rem;
+  --text-body-md--line-height: 1.5rem;
+
+  --text-body-sm: 0.875rem;
+  --text-body-sm--line-height: 1.25rem;
+
+  --text-body-xs: 0.75rem;
+  --text-body-xs--line-height: 1.125rem;
 }
