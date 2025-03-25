@@ -18,7 +18,7 @@ const Header = () => {
     },
   ];
   return (
-    <header className="w-full bg-background-primary border-b border-border-primary">
+    <header className="w-full bg-background-primary border-b border-border-primary sticky top-0 z-50">
       {/* Desktop Header */}
       <div className="container mx-auto px-4 lg:px-6 py-4 flex justify-between items-center">
         <div className="flex items-center gap-10">
