@@ -76,6 +76,8 @@
   --color-text-on-brand: var(--text-on-brand);
   --color-text-on-brand-secondary: var(--text-on-brand-secondary);
   --color-text-purple: var(--text-purple);
+
+  --color-alpha-blue: #1d62ec33;
 }
 
 @theme {
@@ -112,4 +114,35 @@
 
   --text-body-xs: 0.75rem;
   --text-body-xs--line-height: 1.125rem;
+}
+
+@layer components {
+  .button-primary {
+    @apply px-4 py-2 bg-background-brand-main text-text-on-brand rounded-lg text-body-sm font-semibold cursor-pointer;
+  }
+
+  .button-secondary {
+    @apply px-4 py-2 bg-background-cool text-text-secondary rounded-lg text-body-sm font-semibold cursor-pointer;
+  }
+}
+
+@layer utilities {
+  .container {
+    width: 100%;
+    @media (width >= 40rem) {
+      max-width: unset;
+    }
+    @media (width >= 48rem) {
+      max-width: unset;
+    }
+    @media (width >= 64rem) {
+      max-width: unset;
+    }
+    @media (width >= 80rem) {
+      max-width: unset;
+    }
+    @media (width >= 90rem) {
+      max-width: 90rem;
+    }
+  }
 }
