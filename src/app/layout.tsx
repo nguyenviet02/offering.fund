@@ -2,7 +2,7 @@ import type { Metadata } from 'next';
 import { Inter } from 'next/font/google';
 import './globals.css';
 import { WagmiProviders } from '@/provider/wagmiProvider';
-import { Header } from '@/components/layout';
+import { Header, Footer } from '@/components/layout';
 import { ToastContainer } from 'react-toastify';
 const inter = Inter({
   subsets: ['latin'],
@@ -27,6 +27,7 @@ export default function RootLayout({
         <WagmiProviders>
           <Header />
           {children}
+          <Footer />
         </WagmiProviders>
         <ToastContainer />
       </body>
