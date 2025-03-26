@@ -1,17 +1,10 @@
-import Image from 'next/image';
+import { Hero } from '@/components/pages/homepage';
 
 function App() {
   return (
-    <>
-      <div className="relative w-full h-[100vh]">
-        <Image
-          src="/images/hero-bg.png"
-          alt="Hero"
-          fill
-          className="object-cover"
-        />
-      </div>
-    </>
+    <div className="relative w-full">
+      <Hero />
+    </div>
   );
 }
 

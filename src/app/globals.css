@@ -124,6 +124,10 @@
   .button-secondary {
     @apply px-4 py-2 bg-background-cool text-text-secondary rounded-lg text-body-sm font-semibold cursor-pointer;
   }
+
+  .text-gradient {
+    @apply bg-gradient-to-r from-white to-[#aec9ff] bg-clip-text text-transparent;
+  }
 }
 
 @layer utilities {
