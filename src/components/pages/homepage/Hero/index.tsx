@@ -6,7 +6,7 @@ import Image from 'next/image';
 // Hero section component for the homepage
 const Hero = () => {
   return (
-    <section className="container relative mx-auto overflow-hidden">
+    <section className="relative">
       {/* Gradient Background */}
       <div className="absolute inset-0">
         <div className="relative w-full h-full">
