@@ -69,7 +69,7 @@ const socialLinks = [
 const Footer = () => {
   return (
     <footer className="bg-background-secondary w-full">
-      <div className="container mx-auto px-4 md:px-28 py-12 md:py-16 flex flex-col gap-12 md:gap-16">
+      <div className="container mx-auto px-4 md:px-8 lg:px-28 py-12 md:py-16 flex flex-col gap-12 md:gap-16">
         {/* Top section with logo and navigation */}
         <div className="flex flex-col md:flex-row md:justify-between gap-12">
           {/* Logo */}
