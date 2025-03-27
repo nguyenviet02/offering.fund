@@ -15,7 +15,7 @@ const WalletCard = () => {
   };
 
   return (
-    <div className="bg-background-primary rounded-xl flex flex-col gap-4">
+    <div className="bg-background-primary rounded-xl flex flex-col gap-4 w-full">
       {/* First Row */}
       <div className="flex justify-between">
         <div className="flex flex-col gap-1">
