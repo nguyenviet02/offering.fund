@@ -1,0 +1,278 @@
+export const vclist = [
+  {
+    id: 1,
+    name: 'DCI',
+    description: 'Funding the future of digital assets.',
+    members: 3892,
+    founded_at: '2017',
+    deals: 100,
+    best_roi: '134x',
+  },
+  {
+    id: 2,
+    name: 'BasedVC',
+    description:
+      'basedVC allows communities to co-invest early alongside titan funds such as a16z, Coinbase Ventures, Animoca Brands and more.',
+    members: 4169,
+    founded_at: '2021',
+    deals: 50,
+    best_roi: '57x',
+  },
+  {
+    id: 3,
+    name: 'Cryptopia',
+    description:
+      'Combining early stage investment, with a unique focus on community &amp; charity',
+    members: 3656,
+    founded_at: '2021',
+    deals: 24,
+    best_roi: '60x',
+  },
+  {
+    id: 4,
+    name: 'Nexus Fusion Capital',
+    description:
+      'Nexus Fusion Capital leads the charge in revolutionising venture capital by integrating traditional finance’s robustness with digital assets’ innovation. We empower investors worldwide to participate in innovative opportunities responsibly and inclusively.',
+    members: 1012,
+    founded_at: '2024',
+    deals: 7,
+    best_roi: '16x',
+  },
+  {
+    id: 5,
+    name: 'Unreal Capital',
+    description:
+      'Unreal Capital is more than an investment firm – we are pioneers in the realm of digital assets, dedicated to unlocking the immense potential within the ever-evolving world of cryptocurrencies.',
+    members: 1237,
+    founded_at: '2021',
+    deals: 50,
+    best_roi: '86x',
+  },
+  {
+    id: 6,
+    name: 'Castrum Capital',
+    description:
+      'Castrum Capital is a full-stack venture capital firm inspired by the Roman spirit. Our goal is to invest, mentor, and empower crypto-related startups.',
+    members: 1253,
+    founded_at: '2021',
+    deals: 0,
+    best_roi: '3866x',
+  },
+  {
+    id: 7,
+    name: 'Flight Launchpad',
+    description:
+      'Join thousands of people who use Flight Launchpad to invest in best tokens at their early-stage before they list on exchanges.',
+    members: 8975,
+    founded_at: '2022',
+    deals: 2,
+    best_roi: '75x',
+  },
+  {
+    id: 8,
+    name: 'Degen Pool',
+    description:
+      'Degen Pool is an investment syndicate specializing in empowering early-stage, high-potential blockchain startups within DeFi, Metaverse, GameFi, RWA and Infrastructure.',
+    members: 922,
+    founded_at: '2020',
+    deals: 20,
+    best_roi: '6x',
+  },
+  {
+    id: 9,
+    name: 'Magic Square',
+    description:
+      'Explore the future of cryptocurrency with MagicSquare&#39;s Launchpad. Designed for innovative thinkers &amp; investors, our platform offers exclusive eary access to great projects.',
+    members: 8490,
+    founded_at: '2024',
+    deals: 0,
+    best_roi: '26x',
+  },
+  {
+    id: 10,
+    name: 'VC Launchpad',
+    description:
+      'Transparent, Fair, and Fearless—Welcome to the New Age of Crypto VC',
+    members: 372,
+    founded_at: '2024',
+    deals: 5,
+    best_roi: '13x',
+  },
+  {
+    id: 11,
+    name: 'Kinetic Kollective',
+    description:
+      'Early-stage crypto investment group that propels innovation and community-driven growth in the crypto space.',
+    members: 1498,
+    founded_at: '2017',
+    deals: 159,
+    best_roi: '1128x',
+  },
+  {
+    id: 12,
+    name: '300DAO',
+    description:
+      'Investing in the future of Web3 as a community. Join an exclusive group of investors and VCs.',
+    members: 463,
+    founded_at: '2022',
+    deals: 146,
+    best_roi: '107x',
+  },
+  {
+    id: 13,
+    name: 'TPC Club',
+    description:
+      'We leverage financial and human capital to bring the ownership economy to the masses. The gateway to the LATAM market for our portfolio.',
+    members: 5028,
+    founded_at: '2021',
+    deals: 35,
+    best_roi: '12000x',
+  },
+  {
+    id: 14,
+    name: 'Duck DAO',
+    description: 'Get early access to groundbreaking ideas of tomorrow.',
+    members: 2005,
+    founded_at: '2016',
+    deals: 37,
+    best_roi: '1055x',
+  },
+  {
+    id: 15,
+    name: 'LemurX',
+    description:
+      'Your gate to the future of WEB 3 investments, SAFT agreements, NFT collection and much more.',
+    members: 104,
+    founded_at: '2023',
+    deals: 16,
+    best_roi: '60x',
+  },
+  {
+    id: 16,
+    name: '1NVST',
+    description:
+      'A place where fundamental value creation meets venture capital funding.',
+    members: 270,
+    founded_at: '2022',
+    deals: 11,
+    best_roi: '188x',
+  },
+  {
+    id: 17,
+    name: 'YAY Network',
+    description:
+      'Join the leading syndicate in the market. Get access to top-tier public, OTC and exclusive NDA deals.',
+    members: 4358,
+    founded_at: '2021',
+    deals: 8,
+    best_roi: '290x',
+  },
+  {
+    id: 18,
+    name: 'Unitypad',
+    description: 'Access to the best insiders network in crypto',
+    members: 59,
+    founded_at: '2024',
+    deals: 0,
+    best_roi: '15x',
+  },
+  {
+    id: 19,
+    name: 'Bigger Than Race',
+    description:
+      'Bigger Than Race unites a diverse global community, transcending backgrounds to invest in cutting-edge crypto assets driving the next industrial revolutions. We believe in the power of collective wisdom, where each member&#39;s unique perspective strengthens our investment strategies. Join us to learn, grow, and contribute your personal strengths as we shape the future of finance and technology together.',
+    members: 420,
+    founded_at: '2017',
+    deals: 26,
+    best_roi: '10x',
+  },
+  {
+    id: 20,
+    name: 'Unicorn Ventures',
+    description:
+      'Unicorn Ventures is a community-driven initiative dedicated to helping emerging startups reach their full potential through a variety of support services.',
+    members: 1061,
+    founded_at: '2022',
+    deals: 86,
+    best_roi: '86x',
+  },
+  {
+    id: 21,
+    name: 'Connectico Capital',
+    description:
+      'Our vision is to be at the forefront of the Web3 revolution, shaping a decentralized future where technology enhances autonomy, security, and connectivity for all!',
+    members: 517,
+    founded_at: '2018',
+    deals: 5,
+    best_roi: '7521x',
+  },
+  {
+    id: 22,
+    name: 'London Real Ventures',
+    description:
+      'The world&#39;s first media-powered investment firm, investing in cutting-edge Web3, AI, and metaverse companies.',
+    members: 276,
+    founded_at: '2021',
+    deals: 0,
+    best_roi: '33x',
+  },
+  {
+    id: 23,
+    name: 'Nova City',
+    description:
+      'Our ultimate goal is to provide our members with the best opportunities to achieve financial freedom and strengthen their mental abilities.  We want you to not only be successful financially, but also to grow personally and reach your full potential.',
+    members: 438,
+    founded_at: '2024',
+    deals: 2,
+    best_roi: '2x',
+  },
+  {
+    id: 24,
+    name: 'Cryptoheads',
+    description:
+      'Exclusive deals, elite minds, exponential potential. Focused on early deals in the Monad ecosystem.',
+    members: 404,
+    founded_at: '2024',
+    deals: 5,
+    best_roi: '17x',
+  },
+  {
+    id: 25,
+    name: 'Fusion7',
+    description: 'Opening doors is easy. We&#39;re laying foundations.',
+    members: 454,
+    founded_at: '2024',
+    deals: 2,
+    best_roi: '3x',
+  },
+  {
+    id: 26,
+    name: 'Wise3 Ventures',
+    description:
+      'Empowering visionary investors to shape the future of Web3—together, we build tomorrow&#39;s innovation',
+    members: 674,
+    founded_at: '2024',
+    deals: 22,
+    best_roi: '2x',
+  },
+  {
+    id: 27,
+    name: 'Khans DeFi Kitchen',
+    description:
+      'Khans DeFi Kitchen is a community-based VC with primary focus on seeding and supporting blockchain projects &amp; startups. Our experienced team has been successfully facilitating deals in the crypto sector since 2019 with a net volume flow of 8 figures worth of assets under management.',
+    members: 470,
+    founded_at: '2023',
+    deals: 16,
+    best_roi: '2x',
+  },
+  {
+    id: 28,
+    name: 'SMM Capital',
+    description:
+      'Welcome to the Free Allocation presale platform!\r\nWe invest in, guide, and support the leading entrepreneurs of Web3.',
+    members: 531,
+    founded_at: '2024',
+    deals: 0,
+    best_roi: '5x',
+  },
+];
