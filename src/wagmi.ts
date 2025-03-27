@@ -1,10 +1,11 @@
 import { http, cookieStorage, createConfig, createStorage } from 'wagmi';
 import { mainnet, sepolia } from 'wagmi/chains';
+import { metaMask } from 'wagmi/connectors';
 
 export function getConfig() {
   return createConfig({
     chains: [mainnet, sepolia],
-    connectors: [],
+    connectors: [metaMask()],
     storage: createStorage({
       storage: cookieStorage,
     }),
