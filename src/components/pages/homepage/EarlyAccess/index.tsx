@@ -2,6 +2,7 @@
 
 import React from 'react';
 import Image from 'next/image';
+import { Button } from '@headlessui/react';
 
 type InputProps = {
   label: string;
@@ -19,7 +20,7 @@ const InputField = ({ label, placeholder, required = false }: InputProps) => (
       <input
         type="text"
         placeholder={placeholder}
-        className="w-full bg-transparent text-body-sm text-text-placeholder outline-none"
+        className="w-full bg-transparent text-body-sm text-text-primary placeholder:text-text-placeholder outline-none"
       />
     </div>
   </div>
@@ -159,12 +160,12 @@ const EarlyAccess = () => {
                   <InputField label="Referred By" placeholder="@FriendHandle" />
                 </div>
 
-                <button
+                <Button
                   type="submit"
-                  className="mt-2 py-3 px-6 bg-gradient-to-r from-[#2388FF] to-[#4A3AFF] text-white rounded-xl font-semibold text-body-md"
+                  className="mt-2 py-3 px-6 bg-gradient-to-r from-[#2388FF] to-[#4A3AFF] text-white rounded-xl font-semibold text-body-md cursor-pointer"
                 >
                   Pre-Register Now
-                </button>
+                </Button>
               </form>
             </div>
           </div>
