@@ -3,11 +3,11 @@ import Image from 'next/image';
 interface VCCardProps {
   name: string;
   members: number;
-  deals: number;
   description: string;
+  best_roi: string;
 }
 
-const VCCard = ({ name, members, deals, description }: VCCardProps) => {
+const VCCard = ({ name, members, description, best_roi }: VCCardProps) => {
   return (
     <div className="flex flex-col gap-4 p-4 w-full basis-[384px] bg-background-secondary border border-border-primary rounded-2xl">
       <div className="flex justify-between items-start">
@@ -29,8 +29,8 @@ const VCCard = ({ name, members, deals, description }: VCCardProps) => {
               <span className="text-text-secondary text-xs font-medium">
                 {members} members
               </span>
-              <span className="text-text-brand-main text-xs font-medium">
-                {deals} deals
+              <span className="text-text-brand-light text-xs font-medium">
+                Best ROI: {best_roi}
               </span>
             </div>
           </div>
