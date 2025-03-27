@@ -74,9 +74,9 @@ const Footer = () => {
         <div className="flex flex-col md:flex-row md:justify-between gap-12">
           {/* Logo */}
           <Link href="/" className="h-full">
-            <div className="flex h-8">
+            <div className="flex h-fit">
               {/* Logo SVGs */}
-              <div className="relative w-[212px] h-[56px]">
+              <div className="relative w-[181px] h-[48px] lg:w-[212px] lg:h-[56px]">
                 <Image src="/icons/logo.svg" alt="Logo" fill />
               </div>
             </div>
@@ -106,22 +106,24 @@ const Footer = () => {
         </div>
 
         {/* Bottom section with copyright and social links */}
-        <div className="flex flex-col-reverse md:flex-row md:justify-between gap-8 md:items-center">
+        <div className="flex flex-col md:flex-row md:justify-between gap-8 md:items-center">
           {/* Copyright and legal links */}
-          <div className="flex flex-wrap gap-4 md:gap-6 text-text-primary text-sm font-medium">
+          <div className="flex flex-wrap flex-col lg:flex-row gap-4 md:gap-6 text-text-secondary text-sm font-medium">
             <span>© 2025 Otisea. All Rights Reserved.</span>
-            <Link
-              href="/privacy"
-              className="hover:text-text-secondary transition-colors"
-            >
-              Privacy Policy
-            </Link>
-            <Link
-              href="/terms"
-              className="hover:text-text-secondary transition-colors"
-            >
-              Terms
-            </Link>
+            <div className="flex items-center gap-4">
+              <Link
+                href="/privacy"
+                className="hover:text-text-secondary transition-colors"
+              >
+                Privacy Policy
+              </Link>
+              <Link
+                href="/terms"
+                className="hover:text-text-secondary transition-colors"
+              >
+                Terms
+              </Link>
+            </div>
           </div>
 
           {/* Social media links */}
