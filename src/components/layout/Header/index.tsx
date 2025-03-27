@@ -24,7 +24,7 @@ const Header = () => {
         <div className="flex items-center gap-10">
           {/* Logo */}
           <div className="flex items-center w-[121px] h-8 relative">
-            <Link href="/" className="flex items-center size-full">
+            <Link href="/" className="flex items-center size-full relative">
               <Image src="/icons/logo.svg" alt="Offering.fund" fill />
             </Link>
           </div>

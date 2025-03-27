@@ -102,7 +102,7 @@ const PreRegistrationForm = () => {
         </div>
       </div>
       <div className="absolute -top-[48px] lg:top-2 lg:-translate-y-1/2 -z-1 right-[53px] size-[400px] -rotate-20 lg:rotate-20">
-        <Image src="/images/bot.png" fill alt="BOT" />
+        <Image src="/images/bot.png" fill alt="BOT" sizes="100%" />
       </div>
     </div>
   );
