@@ -2,30 +2,7 @@
 
 import React from 'react';
 import Image from 'next/image';
-import { Button } from '@headlessui/react';
-
-type InputProps = {
-  label: string;
-  placeholder: string;
-  required?: boolean;
-};
-
-const InputField = ({ label, placeholder, required = false }: InputProps) => (
-  <div className="flex flex-col gap-1 w-full">
-    <label className="text-body-sm font-semibold text-text-primary">
-      {label}
-      {required && '*'}
-    </label>
-    <div className="bg-background-primary border border-border-primary rounded-xl p-4 md:p-4">
-      <input
-        type="text"
-        placeholder={placeholder}
-        className="w-full bg-transparent text-body-sm text-text-primary placeholder:text-text-placeholder outline-none"
-      />
-    </div>
-  </div>
-);
-
+import PreRegistrationForm from './PreRegistrationForm';
 const EarlyAccess = () => {
   return (
     <section className="relative w-full overflow-hidden px-4 md:px-8 lg:pl-[112px] pt-0 md:pt-4 lg:pt-8 pb-0 md:pb-14 lg:pb-[120px]">
@@ -134,45 +111,7 @@ const EarlyAccess = () => {
           </div>
         </div>
 
-        <div className="flex-1 pt-[136px] lg:pt-0 relative flex justify-end items-center pr-0 lg:pr-[208px]">
-          {/* Registration form */}
-          <div className="w-full lg:w-[440px] relative">
-            <div className="bg-background-secondary border border-border-primary rounded-2xl md:rounded-3xl p-4 md:p-5 lg:p-5">
-              <form className="flex flex-col gap-4">
-                <InputField
-                  label="Syndicate"
-                  placeholder="Enter your syndicate name"
-                  required
-                />
-
-                <InputField
-                  label="Email"
-                  placeholder="example@email.com"
-                  required
-                />
-
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                  <InputField
-                    label="Telegram Account"
-                    placeholder="@YourAccount"
-                  />
-
-                  <InputField label="Referred By" placeholder="@FriendHandle" />
-                </div>
-
-                <Button
-                  type="submit"
-                  className="mt-2 py-3 px-6 bg-gradient-to-r from-[#2388FF] to-[#4A3AFF] text-white rounded-xl font-semibold text-body-md cursor-pointer"
-                >
-                  Pre-Register Now
-                </Button>
-              </form>
-            </div>
-          </div>
-          <div className="absolute -top-[48px] lg:top-2 lg:-translate-y-1/2 -z-1 right-[53px] size-[400px] -rotate-20 lg:rotate-20">
-            <Image src="/images/bot.png" fill alt="BOT" />
-          </div>
-        </div>
+        <PreRegistrationForm />
       </div>
     </section>
   );
