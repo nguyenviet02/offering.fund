@@ -140,6 +140,10 @@
   .text-gradient {
     @apply bg-gradient-to-r from-white to-[#FFDBDB] bg-clip-text text-transparent;
   }
+
+  .text-gradient-brand {
+    @apply bg-gradient-to-r from-[#ED8942] to-[#FD4F45] bg-clip-text text-transparent;
+  }
 }
 
 @layer utilities {

@@ -36,9 +36,9 @@ const Header = () => {
                 <Link
                   key={item.label}
                   href={item.href}
-                  className="hover:bg-alpha-blue group flex h-10 w-fit min-w-[95px] items-center justify-center rounded-lg px-3 py-2"
+                  className="hover:bg-alpha-orange-info group flex h-10 w-fit min-w-[95px] items-center justify-center rounded-lg px-3 py-2"
                 >
-                  <span className="text-body-sm text-text-primary group-hover:text-text-brand-light font-semibold">
+                  <span className="text-body-sm text-text-primary font-semibold group-hover:text-[#ED8942]">
                     {item.label}
                   </span>
                 </Link>
