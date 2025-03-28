@@ -20,8 +20,8 @@ const EarlyAccess = () => {
               Pre-Register for Syndicates
             </h2>
             <p className="text-body-sm text-text-secondary font-medium">
-              Early Otisea members receive exclusive benefits - join now to
-              secure your privileges!
+              Early Offering.fund members receive exclusive benefits - join now
+              to secure your privileges!
             </p>
           </div>
 
@@ -39,10 +39,11 @@ const EarlyAccess = () => {
               </div>
               <div className="flex flex-col gap-1">
                 <h3 className="text-body-md md:text-body-lg text-text-primary font-semibold">
-                  Onboarding Portfolio Into Otisea
+                  Onboarding Portfolio Into Offering.fund
                 </h3>
                 <p className="text-body-sm text-text-secondary font-medium">
-                  Integrate your past & current deals into Otisea without cost
+                  Integrate your past & current deals into Offering.fund without
+                  cost
                 </p>
               </div>
             </div>

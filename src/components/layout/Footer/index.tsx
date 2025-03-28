@@ -69,21 +69,21 @@ const socialLinks = [
 const Footer = () => {
   return (
     <footer className="bg-background-secondary w-full">
-      <div className="container mx-auto px-4 md:px-8 lg:px-28 py-12 md:py-16 flex flex-col gap-12 md:gap-16">
+      <div className="container mx-auto flex flex-col gap-12 px-4 py-12 md:gap-16 md:px-8 md:py-16 lg:px-28">
         {/* Top section with logo and navigation */}
-        <div className="flex flex-col md:flex-row md:justify-between gap-12">
+        <div className="flex flex-col gap-12 md:flex-row md:justify-between">
           {/* Logo */}
           <Link href="/" className="h-full">
             <div className="flex h-fit">
               {/* Logo SVGs */}
-              <div className="relative w-[181px] h-[48px] lg:w-[212px] lg:h-[56px]">
+              <div className="relative h-[48px] w-[181px] lg:h-[56px] lg:w-[212px]">
                 <Image src="/icons/logo.svg" alt="Logo" fill />
               </div>
             </div>
           </Link>
 
           {/* Navigation */}
-          <div className="grid grid-cols-2 md:flex gap-8 md:gap-16">
+          <div className="grid grid-cols-2 gap-8 md:flex md:gap-16">
             {navigationData.map((section) => (
               <div key={section.title} className="flex flex-col gap-4">
                 <h3 className="text-text-secondary text-sm font-medium">
@@ -94,7 +94,7 @@ const Footer = () => {
                     <Link
                       key={item.label}
                       href={item.href}
-                      className={`text-text-primary hover:text-text-secondary transition-colors text-sm font-medium `}
+                      className={`text-text-primary hover:text-text-secondary text-sm font-medium transition-colors`}
                     >
                       {item.label}
                     </Link>
@@ -106,10 +106,10 @@ const Footer = () => {
         </div>
 
         {/* Bottom section with copyright and social links */}
-        <div className="flex flex-col md:flex-row md:justify-between gap-8 md:items-center">
+        <div className="flex flex-col gap-8 md:flex-row md:items-center md:justify-between">
           {/* Copyright and legal links */}
-          <div className="flex flex-wrap flex-col lg:flex-row gap-4 md:gap-6 text-text-secondary text-sm font-medium">
-            <span>© 2025 Otisea. All Rights Reserved.</span>
+          <div className="text-text-secondary flex flex-col flex-wrap gap-4 text-sm font-medium md:gap-6 lg:flex-row">
+            <span>© 2025 Offering.fund. All Rights Reserved.</span>
             <div className="flex items-center gap-4">
               <Link
                 href="/privacy"
@@ -134,7 +134,7 @@ const Footer = () => {
                 href={social.href}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="size-8 relative hover:opacity-80 transition-opacity"
+                className="relative size-8 transition-opacity hover:opacity-80"
                 aria-label={social.label}
               >
                 <Image

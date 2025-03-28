@@ -28,8 +28,8 @@ const Hero = () => {
               Invest Early, At The Best Price, Just Like A VC
             </h1>
             <p className="text-body-sm md:text-body-md lg:text-body-lg text-text-secondary font-medium">
-              Otisea connects investors directly with premium syndicate deals
-              through various investment channels.
+              Offering.fund connects investors directly with premium syndicate
+              deals through various investment channels.
             </p>
           </div>
         </div>
