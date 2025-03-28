@@ -11,8 +11,8 @@ const EarlyAccess = () => {
         <div className="flex w-full flex-1 flex-col gap-8 lg:w-1/2 lg:max-w-[520px]">
           {/* Title section */}
           <div className="flex flex-col gap-2">
-            <div className="bg-alpha-blue flex w-fit items-center justify-center rounded-lg px-2 py-[6px]">
-              <span className="text-body-xs text-text-brand-light leading-[20px] font-semibold">
+            <div className="bg-alpha-orange-info flex w-fit items-center justify-center rounded-lg px-2 py-[6px]">
+              <span className="text-body-xs leading-[20px] font-semibold text-[#FF6A00]">
                 Early Access
               </span>
             </div>
@@ -29,7 +29,7 @@ const EarlyAccess = () => {
           <div className="flex w-full flex-col gap-3">
             {/* Feature 1 */}
             <div className="flex items-center gap-4 rounded-2xl p-2">
-              <div className="bg-alpha-blue flex size-12 shrink-0 items-center justify-center rounded-full">
+              <div className="bg-alpha-red flex size-12 shrink-0 items-center justify-center rounded-full">
                 <Image
                   src="/icons/contract.svg"
                   alt="Contract"
@@ -50,7 +50,7 @@ const EarlyAccess = () => {
 
             {/* Feature 2 */}
             <div className="flex items-center gap-4 rounded-2xl p-2">
-              <div className="bg-alpha-red flex size-12 shrink-0 items-center justify-center rounded-full">
+              <div className="bg-alpha-orange-info flex size-12 shrink-0 items-center justify-center rounded-full">
                 <Image
                   src="/icons/user-star.svg"
                   alt="VIP"
@@ -71,7 +71,7 @@ const EarlyAccess = () => {
 
             {/* Feature 3 */}
             <div className="flex items-center gap-4 rounded-2xl p-2">
-              <div className="bg-alpha-orange flex size-12 shrink-0 items-center justify-center rounded-full">
+              <div className="bg-alpha-green flex size-12 shrink-0 items-center justify-center rounded-full">
                 <Image
                   src="/icons/planet.svg"
                   alt="Network"

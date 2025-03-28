@@ -17,6 +17,7 @@
   --alpha-blue: #1d62ec33;
   --alpha-red: #ff353533;
   --alpha-orange: #ff6a0033;
+  --alpha-orange-info: #ff6a0033;
   --alpha-violet: #7b14e333;
   --alpha-green: #24c68233;
 
@@ -86,6 +87,7 @@
   --color-alpha-blue: var(--alpha-blue);
   --color-alpha-red: var(--alpha-red);
   --color-alpha-orange: var(--alpha-orange);
+  --color-alpha-orange-info: var(--alpha-orange-info);
   --color-alpha-violet: var(--alpha-violet);
   --color-alpha-green: var(--alpha-green);
 }
@@ -128,7 +130,7 @@
 
 @layer components {
   .button-primary {
-    @apply bg-background-brand-main text-text-on-brand text-body-sm cursor-pointer rounded-lg px-4 py-2 font-semibold;
+    @apply text-text-on-brand text-body-sm cursor-pointer rounded-lg bg-gradient-to-r from-[#ED8942] to-[#FD4F45] px-4 py-2 font-semibold;
   }
 
   .button-secondary {

@@ -87,7 +87,7 @@ const PreRegistrationForm = () => {
         <Button
           type="submit"
           disabled={loading}
-          className="text-text-on-brand text-body-md mt-2 cursor-pointer rounded-xl bg-gradient-to-r from-[#ED8942] to-[#FD4F45] px-6 py-3 font-semibold disabled:cursor-not-allowed disabled:opacity-50"
+          className="button-primary mt-2 cursor-pointer rounded-xl px-6 py-3 font-semibold disabled:cursor-not-allowed disabled:opacity-50"
         >
           {loading ? 'Submitting...' : 'Pre-Register Now'}
         </Button>
