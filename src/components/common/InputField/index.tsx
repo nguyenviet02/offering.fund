@@ -10,10 +10,10 @@ type InputProps = {
 
 const InputField = forwardRef<HTMLInputElement, InputProps>(
   ({ label, name, placeholder, required = false, error, ...props }, ref) => (
-    <div className="flex flex-col gap-1 w-full">
+    <div className="flex w-full flex-col gap-1">
       <label
         htmlFor={name}
-        className="text-body-sm font-semibold text-text-primary"
+        className="text-body-sm text-text-primary font-semibold"
       >
         {label}
         {required && '*'}
@@ -28,14 +28,14 @@ const InputField = forwardRef<HTMLInputElement, InputProps>(
           name={name}
           id={name}
           placeholder={placeholder}
-          className="w-full bg-transparent text-body-sm text-text-primary placeholder:text-text-placeholder outline-none"
+          className="text-body-sm text-text-primary placeholder:text-text-placeholder w-full bg-transparent outline-none"
           ref={ref}
           {...props}
         />
       </div>
       {error && <span className="text-body-xs text-red-500">{error}</span>}
     </div>
-  )
+  ),
 );
 
 InputField.displayName = 'InputField';

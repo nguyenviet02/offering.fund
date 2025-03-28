@@ -34,13 +34,13 @@ const MobileMenuButton = ({ navigation }: MobileMenuButtonProps) => {
     <>
       {/* Mobile Menu Button */}
       <Button
-        className="lg:hidden relative flex items-center rounded-lg border border-border-primary p-2 z-[50]"
+        className="border-border-primary relative z-[50] flex items-center rounded-lg border p-2 lg:hidden"
         onClick={toggleMenu}
         aria-label="Toggle menu"
       >
         <svg
           xmlns="http://www.w3.org/2000/svg"
-          className="h-6 w-6 text-text-primary"
+          className="text-text-primary h-6 w-6"
           fill="none"
           viewBox="0 0 24 24"
           stroke="currentColor"
@@ -78,17 +78,17 @@ const MobileMenuButton = ({ navigation }: MobileMenuButtonProps) => {
                 leaveTo="translate-x-full"
               >
                 <DialogPanel className="pointer-events-auto w-screen max-w-sm">
-                  <div className="flex h-full flex-col overflow-y-auto bg-background-primary px-6 pb-6 shadow-xl border-l border-border-primary">
+                  <div className="bg-background-primary border-border-primary flex h-full flex-col overflow-y-auto border-l px-6 pb-6 shadow-xl">
                     <div className="flex flex-col gap-6">
-                      <div className="flex items-center justify-end border-b border-border-primary py-4">
+                      <div className="border-border-primary flex items-center justify-end border-b py-4">
                         <Button
-                          className="lg:hidden relative flex items-center rounded-lg border border-border-primary p-2 z-[50]"
+                          className="border-border-primary relative z-[50] flex items-center rounded-lg border p-2 lg:hidden"
                           onClick={toggleMenu}
                           aria-label="Toggle menu"
                         >
                           <svg
                             xmlns="http://www.w3.org/2000/svg"
-                            className="h-6 w-6 text-text-primary"
+                            className="text-text-primary h-6 w-6"
                             fill="none"
                             viewBox="0 0 24 24"
                             stroke="currentColor"
@@ -102,7 +102,7 @@ const MobileMenuButton = ({ navigation }: MobileMenuButtonProps) => {
                           </svg>
                         </Button>
                       </div>
-                      <div className="relative flex items-center gap-2 py-3 px-4 rounded-lg border border-border-primary w-full">
+                      <div className="border-border-primary relative flex w-full items-center gap-2 rounded-lg border px-4 py-3">
                         <div className="relative size-5">
                           <Image
                             src="/icons/search-line.svg"
@@ -113,7 +113,7 @@ const MobileMenuButton = ({ navigation }: MobileMenuButtonProps) => {
                         <input
                           type="text"
                           placeholder="Search"
-                          className="w-full text-body-sm text-text-primary placeholder:text-text-placeholder border-none outline-none bg-transparent"
+                          className="text-body-sm text-text-primary placeholder:text-text-placeholder w-full border-none bg-transparent outline-none"
                         />
                       </div>
                       <div className="flex flex-col gap-4">
@@ -121,7 +121,7 @@ const MobileMenuButton = ({ navigation }: MobileMenuButtonProps) => {
                           <Link
                             key={item.label}
                             href={item.href}
-                            className="h-10 w-full flex items-center py-2 px-3 rounded-lg group"
+                            className="group flex h-10 w-full items-center rounded-lg px-3 py-2"
                           >
                             <span className="text-body-sm text-text-primary group-hover:text-text-brand-light">
                               {item.label}

@@ -22,7 +22,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${inter.className} antialiased bg-background-primary text-text-primary`}
+        className={`${inter.className} bg-background-primary text-text-primary antialiased`}
       >
         <WagmiProviders>
           <Header />

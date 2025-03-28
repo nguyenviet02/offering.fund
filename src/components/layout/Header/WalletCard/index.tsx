@@ -15,7 +15,7 @@ const WalletCard = () => {
   };
 
   return (
-    <div className="bg-background-primary rounded-xl flex flex-col gap-4 w-full">
+    <div className="bg-background-primary flex w-full flex-col gap-4 rounded-xl">
       {/* First Row */}
       <div className="flex justify-between">
         <div className="flex flex-col gap-1">
@@ -28,7 +28,7 @@ const WalletCard = () => {
             </span>
             <Button
               onClick={handleCopyAddress}
-              className="relative w-4 h-4 hover:opacity-80 cursor-pointer"
+              className="relative h-4 w-4 cursor-pointer hover:opacity-80"
             >
               <Image
                 src="/icons/file-copy-line.svg"
@@ -51,7 +51,7 @@ const WalletCard = () => {
             {account?.connector?.name}
           </span>
         </div>
-        <div className="flex flex-col gap-1 items-end">
+        <div className="flex flex-col items-end gap-1">
           <span className="text-text-secondary text-xs font-medium">
             Network
           </span>
@@ -65,14 +65,14 @@ const WalletCard = () => {
       <div className="flex flex-col gap-2">
         <Button
           onClick={() => {}}
-          className="w-full py-2 px-4 text-sm font-semibold text-text-secondary border border-border-primary rounded-lg hover:bg-border-primary transition-colors cursor-pointer"
+          className="text-text-secondary border-border-primary hover:bg-border-primary w-full cursor-pointer rounded-lg border px-4 py-2 text-sm font-semibold transition-colors"
         >
           Setting
         </Button>
         <div className="flex gap-2">
           <Button
             onClick={() => {}}
-            className="flex-1 py-2 px-4 text-sm font-semibold text-text-secondary border border-border-primary rounded-lg hover:bg-border-primary transition-colors cursor-pointer"
+            className="text-text-secondary border-border-primary hover:bg-border-primary flex-1 cursor-pointer rounded-lg border px-4 py-2 text-sm font-semibold transition-colors"
           >
             Switch Chain
           </Button>
@@ -80,7 +80,7 @@ const WalletCard = () => {
             onClick={() => {
               disconnect();
             }}
-            className="flex-1 py-2 px-4 text-sm font-semibold text-text-primary bg-background-error-main rounded-lg hover:bg-background-error-dark transition-colors cursor-pointer"
+            className="text-text-primary bg-background-error-main hover:bg-background-error-dark flex-1 cursor-pointer rounded-lg px-4 py-2 text-sm font-semibold transition-colors"
           >
             Disconnect
           </Button>

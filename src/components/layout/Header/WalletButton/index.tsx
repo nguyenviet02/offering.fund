@@ -28,7 +28,7 @@ const WalletButton = () => {
             </MenuButton>
             <MenuItems
               anchor="bottom"
-              className="bg-background-primary w-[312px] border border-border-primary rounded-lg shadow-lg mt-2 p-4"
+              className="bg-background-primary border-border-primary mt-2 w-[312px] rounded-lg border p-4 shadow-lg"
             >
               <WalletCard />
             </MenuItems>
@@ -43,7 +43,7 @@ const WalletButton = () => {
             </MenuButton>
             <MenuItems
               anchor="bottom"
-              className="bg-background-primary p-5 w-[200px] border border-border-primary rounded-lg shadow-lg mt-2"
+              className="bg-background-primary border-border-primary mt-2 w-[200px] rounded-lg border p-5 shadow-lg"
             >
               {connectors.map((connector) => (
                 <MenuItem key={connector.uid}>
@@ -53,7 +53,7 @@ const WalletButton = () => {
                       connect({ connector });
                     }}
                     type="button"
-                    className="flex items-center gap-3 w-full hover:bg-[#e0e8ff1a] border border-transparent p-2 rounded-xl"
+                    className="flex w-full items-center gap-3 rounded-xl border border-transparent p-2 hover:bg-[#e0e8ff1a]"
                   >
                     <Image
                       unoptimized
@@ -75,13 +75,13 @@ const WalletButton = () => {
           </Menu>
         )}
       </div>
-      <div className="lg:hidden w-full">
+      <div className="w-full lg:hidden">
         {account.status === 'connected' ? (
           <WalletCard />
         ) : (
-          <div className="flex flex-col w-full gap-2">
+          <div className="flex w-full flex-col gap-2">
             <p className="text-text-primary font-bold">Connect Wallet</p>
-            <div className="flex gap-2 flex-wrap">
+            <div className="flex flex-wrap gap-2">
               {connectors.map((connector) => (
                 <Button
                   key={connector.uid}
@@ -89,7 +89,7 @@ const WalletButton = () => {
                     connect({ connector });
                   }}
                   type="button"
-                  className="flex w-fit items-center gap-3 hover:bg-[#e0e8ff1a] border border-border-primary py-2 px-4 rounded-xl"
+                  className="border-border-primary flex w-fit items-center gap-3 rounded-xl border px-4 py-2 hover:bg-[#e0e8ff1a]"
                 >
                   <Image
                     unoptimized

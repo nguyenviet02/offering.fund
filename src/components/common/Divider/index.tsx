@@ -6,7 +6,7 @@ type Props = {
 
 const Divider = ({ className }: Props) => {
   return (
-    <div className={`w-full border-t border-border-primary ${className}`} />
+    <div className={`border-border-primary w-full border-t ${className}`} />
   );
 };
 
