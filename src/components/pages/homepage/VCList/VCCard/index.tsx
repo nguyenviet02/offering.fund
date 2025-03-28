@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import toast from 'react-hot-toast';
 
 interface VCCardProps {
   name: string;
@@ -8,6 +9,13 @@ interface VCCardProps {
 }
 
 const VCCard = ({ name, members, description, best_roi }: VCCardProps) => {
+  const handleJoin = () => {
+    toast('Coming Soon!', {
+      icon: '🚧',
+      duration: 2000,
+    });
+  };
+
   return (
     <div className="bg-background-secondary border-border-primary flex w-full basis-[384px] flex-col gap-4 rounded-2xl border p-4">
       <div className="flex items-start justify-between">
@@ -44,7 +52,9 @@ const VCCard = ({ name, members, description, best_roi }: VCCardProps) => {
       <p className="text-text-secondary line-clamp-3 flex-1 text-sm font-medium">
         {description}
       </p>
-      <button className="button-primary">Join Now</button>
+      <button onClick={handleJoin} className="button-primary">
+        Join Now
+      </button>
     </div>
   );
 };

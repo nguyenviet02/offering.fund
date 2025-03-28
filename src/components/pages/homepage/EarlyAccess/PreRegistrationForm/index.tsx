@@ -1,10 +1,10 @@
 import { InputField } from '@/components/common';
 import { Button } from '@headlessui/react';
 import React, { useState } from 'react';
-import { toast } from 'react-toastify';
 import { useForm } from 'react-hook-form';
 import { zodResolver } from '@hookform/resolvers/zod';
 import { z } from 'zod';
+import toast from 'react-hot-toast';
 
 // Define form schema with Zod
 const formSchema = z.object({

@@ -1,9 +1,9 @@
 import React from 'react';
 import Image from 'next/image';
-import { toast } from 'react-toastify';
 import { Button } from '@headlessui/react';
 import { useAccount, useDisconnect } from 'wagmi';
 import { formatAddress } from '@/utils';
+import toast from 'react-hot-toast';
 
 const WalletCard = () => {
   const account = useAccount();
