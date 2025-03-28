@@ -9,16 +9,16 @@ interface VCCardProps {
 
 const VCCard = ({ name, members, description, best_roi }: VCCardProps) => {
   return (
-    <div className="flex flex-col gap-4 p-4 w-full basis-[384px] bg-background-secondary border border-border-primary rounded-2xl">
-      <div className="flex justify-between items-start">
+    <div className="bg-background-secondary border-border-primary flex w-full basis-[384px] flex-col gap-4 rounded-2xl border p-4">
+      <div className="flex items-start justify-between">
         <div className="flex items-center gap-3">
-          <div className="w-12 h-12 rounded-xl overflow-hidden bg-[#191C24]">
+          <div className="h-12 w-12 overflow-hidden rounded-xl bg-[#191C24]">
             <Image
               src="/images/vc.png"
               alt={name}
               width={48}
               height={48}
-              className="w-full h-full object-cover"
+              className="h-full w-full object-cover"
             />
           </div>
           <div className="flex flex-col">
@@ -36,12 +36,12 @@ const VCCard = ({ name, members, description, best_roi }: VCCardProps) => {
           </div>
         </div>
         <div
-          className={`px-2 py-1 rounded-lg bg-[rgba(36,198,130,0.2)] text-text-success flex items-center justify-center`}
+          className={`bg-alpha-green flex items-center justify-center rounded-lg px-2 py-1`}
         >
-          <span className="text-sm font-semibold">New</span>
+          <span className="text-text-success text-sm font-semibold">New</span>
         </div>
       </div>
-      <p className="text-text-secondary text-sm font-medium flex-1 line-clamp-3">
+      <p className="text-text-secondary line-clamp-3 flex-1 text-sm font-medium">
         {description}
       </p>
       <button className="button-primary">Join Now</button>

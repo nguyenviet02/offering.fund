@@ -1,16 +1,16 @@
 @import 'tailwindcss';
 
 :root {
-  --background-primary: #0a0d14;
-  --background-secondary: #11141c;
-  --background-cool: #282b34;
-  --background-brand-light: #0e2063;
-  --background-brand-main: #375ee6;
-  --background-brand-dark: #263fc7;
+  --background-primary: #140c0a;
+  --background-secondary: #1d1310;
+  --background-cool: #352b28;
+  --background-brand-light: #651c06;
+  --background-brand-main: #fb584b;
+  --background-brand-dark: #c73c19;
   --background-error-light: #650905;
   --background-error-main: #fd433d;
   --background-error-dark: #cf3631;
-  --background-disabled: #282b34;
+  --background-disabled: #352b28;
   --background-accent: #eeeff3;
   --background-accent-secondary: #d7d9e1;
 
@@ -18,26 +18,27 @@
   --alpha-red: #ff353533;
   --alpha-orange: #ff6a0033;
   --alpha-violet: #7b14e333;
+  --alpha-green: #24c68233;
 
-  --border-primary: #191c24;
-  --border-brand: #375ee6;
+  --border-primary: #241c19;
+  --border-brand: #e24a30;
   --border-success: #23c586;
   --border-warning: #fd7125;
   --border-error: #fc524d;
 
-  --text-primary: #eeeff3;
-  --text-secondary: #9598ab;
-  --text-placeholder: #626679;
-  --text-disabled: #404352;
+  --text-primary: #f3efee;
+  --text-secondary: #ac9a95;
+  --text-placeholder: #7a6862;
+  --text-disabled: #534440;
   --text-warning: #fd7125;
   --text-error: #fc524d;
   --text-info: #b7b9c7;
   --text-success: #19b076;
-  --text-brand-light: #6f96fa;
-  --text-brand-main: #375ee6;
-  --text-brand-dark: #263fc7;
+  --text-brand-light: #eb8d4d;
+  --text-brand-main: #fb584b;
+  --text-brand-dark: #c73c19;
   --text-on-brand: #ffffff;
-  --text-on-brand-secondary: #404352;
+  --text-on-brand-secondary: #534440;
   --text-purple: #8b3deb;
 }
 @media (prefers-color-scheme: light) {
@@ -86,6 +87,7 @@
   --color-alpha-red: var(--alpha-red);
   --color-alpha-orange: var(--alpha-orange);
   --color-alpha-violet: var(--alpha-violet);
+  --color-alpha-green: var(--alpha-green);
 }
 
 @theme {
@@ -126,15 +128,15 @@
 
 @layer components {
   .button-primary {
-    @apply px-4 py-2 bg-background-brand-main text-text-on-brand rounded-lg text-body-sm font-semibold cursor-pointer;
+    @apply bg-background-brand-main text-text-on-brand text-body-sm cursor-pointer rounded-lg px-4 py-2 font-semibold;
   }
 
   .button-secondary {
-    @apply px-4 py-2 bg-background-cool text-text-secondary rounded-lg text-body-sm font-semibold cursor-pointer;
+    @apply bg-background-cool text-text-secondary text-body-sm cursor-pointer rounded-lg px-4 py-2 font-semibold;
   }
 
   .text-gradient {
-    @apply bg-gradient-to-r from-white to-[#aec9ff] bg-clip-text text-transparent;
+    @apply bg-gradient-to-r from-white to-[#FFDBDB] bg-clip-text text-transparent;
   }
 }
 

@@ -14,10 +14,10 @@ const VCList = () => {
   };
 
   return (
-    <div className="flex flex-col gap-8 px-4 md:px-8 lg:px-28 pb-[120px]">
+    <div className="container mx-auto flex flex-col gap-8 px-4 pb-[120px] md:px-8 lg:px-28">
       {/* Search bar - to be implemented */}
       <div className="w-full md:w-80">
-        <div className="flex items-center gap-3 px-4 py-3 bg-background-primary border border-border-primary rounded-xl">
+        <div className="bg-background-primary border-border-primary flex items-center gap-3 rounded-xl border px-4 py-3">
           <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
             <path
               d="M9.16667 15.8333C12.8486 15.8333 15.8333 12.8486 15.8333 9.16667C15.8333 5.48477 12.8486 2.5 9.16667 2.5C5.48477 2.5 2.5 5.48477 2.5 9.16667C2.5 12.8486 5.48477 15.8333 9.16667 15.8333Z"
@@ -37,13 +37,13 @@ const VCList = () => {
           <input
             type="text"
             placeholder="Search"
-            className="flex-1 bg-transparent text-text-primary text-sm font-medium placeholder:text-[#61667A] focus:outline-none"
+            className="text-text-primary flex-1 bg-transparent text-sm font-medium placeholder:text-[#61667A] focus:outline-none"
           />
         </div>
       </div>
 
       {/* VC Cards Grid */}
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+      <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
         {mockVCs.slice(0, displayCount).map((vc) => (
           <VCCard key={vc.id} {...vc} />
         ))}
@@ -52,14 +52,14 @@ const VCList = () => {
       {/* Load More Section */}
       {hasMore && (
         <div className="flex items-center gap-3">
-          <div className="flex-1 h-[1px] bg-border-primary" />
+          <div className="bg-border-primary h-[1px] flex-1" />
           <button
             onClick={handleLoadMore}
-            className="px-4 py-2 bg-background-primary border border-border-primary rounded-lg text-text-brand-main text-sm font-medium cursor-pointer"
+            className="bg-background-primary border-border-primary text-text-brand-main cursor-pointer rounded-lg border px-4 py-2 text-sm font-medium"
           >
             Explore All
           </button>
-          <div className="flex-1 h-[1px] bg-border-primary" />
+          <div className="bg-border-primary h-[1px] flex-1" />
         </div>
       )}
     </div>

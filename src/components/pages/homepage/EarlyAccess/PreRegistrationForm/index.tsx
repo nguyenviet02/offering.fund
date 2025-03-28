@@ -1,7 +1,6 @@
 import { InputField } from '@/components/common';
 import { Button } from '@headlessui/react';
 import React, { useState } from 'react';
-import Image from 'next/image';
 import { toast } from 'react-toastify';
 import { useForm } from 'react-hook-form';
 import { zodResolver } from '@hookform/resolvers/zod';
@@ -51,59 +50,48 @@ const PreRegistrationForm = () => {
   };
 
   return (
-    <div className="flex-1 pt-[136px] lg:pt-0 relative flex justify-end items-center pr-0 lg:pr-[208px]">
-      {/* Registration form */}
-      <div className="w-full lg:w-[440px] relative">
-        <div className="bg-background-secondary border border-border-primary rounded-2xl md:rounded-3xl p-4 md:p-5 lg:p-5">
-          <form
-            className="flex flex-col gap-4"
-            onSubmit={handleSubmit(onSubmit)}
-          >
-            <InputField
-              label="Syndicate"
-              placeholder="Enter your syndicate name"
-              required
-              error={errors.syndicate?.message}
-              {...register('syndicate')}
-            />
+    <div className="bg-background-secondary border-border-primary relative w-full rounded-2xl border p-4 md:rounded-3xl md:p-5 lg:w-[440px] lg:p-5">
+      <form className="flex flex-col gap-4" onSubmit={handleSubmit(onSubmit)}>
+        <InputField
+          label="Syndicate"
+          placeholder="Enter your syndicate name"
+          required
+          error={errors.syndicate?.message}
+          {...register('syndicate')}
+        />
 
-            <InputField
-              label="Email"
-              placeholder="example@email.com"
-              required
-              error={errors.email?.message}
-              {...register('email')}
-            />
+        <InputField
+          label="Email"
+          placeholder="example@email.com"
+          required
+          error={errors.email?.message}
+          {...register('email')}
+        />
 
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-              <InputField
-                label="Telegram Account"
-                placeholder="@YourAccount"
-                error={errors.telegramAccount?.message}
-                {...register('telegramAccount')}
-              />
+        <div className="grid grid-cols-1 gap-4 md:grid-cols-2">
+          <InputField
+            label="Telegram Account"
+            placeholder="@YourAccount"
+            error={errors.telegramAccount?.message}
+            {...register('telegramAccount')}
+          />
 
-              <InputField
-                label="Referred By"
-                placeholder="@FriendHandle"
-                error={errors.referredBy?.message}
-                {...register('referredBy')}
-              />
-            </div>
-
-            <Button
-              type="submit"
-              disabled={loading}
-              className="mt-2 py-3 px-6 bg-gradient-to-r from-[#2388FF] to-[#4A3AFF] text-white rounded-xl font-semibold text-body-md cursor-pointer disabled:opacity-50 disabled:cursor-not-allowed"
-            >
-              {loading ? 'Submitting...' : 'Pre-Register Now'}
-            </Button>
-          </form>
+          <InputField
+            label="Referred By"
+            placeholder="@FriendHandle"
+            error={errors.referredBy?.message}
+            {...register('referredBy')}
+          />
         </div>
-      </div>
-      <div className="absolute -top-[48px] lg:top-2 lg:-translate-y-1/2 -z-1 right-[53px] size-[400px] -rotate-20 lg:rotate-20">
-        <Image src="/images/bot.png" fill alt="BOT" sizes="100%" />
-      </div>
+
+        <Button
+          type="submit"
+          disabled={loading}
+          className="text-text-on-brand text-body-md mt-2 cursor-pointer rounded-xl bg-gradient-to-r from-[#ED8942] to-[#FD4F45] px-6 py-3 font-semibold disabled:cursor-not-allowed disabled:opacity-50"
+        >
+          {loading ? 'Submitting...' : 'Pre-Register Now'}
+        </Button>
+      </form>
     </div>
   );
 };
